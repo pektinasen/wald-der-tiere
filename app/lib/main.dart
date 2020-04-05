@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
-import 'domain/fish.dart';
+import 'domain.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,9 +67,9 @@ class _MyHomePageState extends State<MyHomePage>
     super.dispose();
   }
 
-  Future<List<T>> _read<T>(T f(Map<String, dynamic> _)) async {
-    final file = await rootBundle.loadString('assets/fish_uuid.json');
-    return (jsonDecode(file) as List).map((fish) => f(fish)).toList();
+  Future<List<T>> _read<T>(String fileName, T f(Map<String, dynamic> _)) async {
+    final contents = await rootBundle.loadString("assets/$fileName");
+    return (jsonDecode(contents) as List).map((entry) => f(entry)).toList();
   }
 
   Widget _createListView<T>(List<T> data, String f(T)) {
@@ -132,14 +132,14 @@ class _MyHomePageState extends State<MyHomePage>
         ),
         body: TabBarView(
           children: [
-            futureBuilder(_read<Fish>((m) => Fish.fromJson(m)),
-                (fish) => fish.name, (a, b) => a.name.compareTo(b.name)),
             futureBuilder(
-                Future.value([
-                  {"name": "foo"}
-                ]),
-                (fish) => fish['name'],
-                (a, b) => a['name'].compareTo(b['name'])),
+              _read<Fish>('fish_uuid.json', (f) => Fish.fromJson(f)),
+              (fish) => fish.name,
+              (a, b) => a.name.compareTo(b.name)),
+            futureBuilder(
+                _read<Bug>("bugs_uuid.json", (b) => Bug.fromJson(b)),
+                (bug) => bug.name,
+                (a, b) => a.name.compareTo(b.name)),
             futureBuilder(
                 Future.value([
                   {"name": "bar"}
