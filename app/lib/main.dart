@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'package:built_collection/built_collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -95,22 +96,25 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
 
-    FutureBuilder<List<T>> futureBuilder<T>(future, String f(T)) {
+    FutureBuilder<List<T>> futureBuilder<T>(
+        Future<List<T>> future,
+        String f(T),
+        int c(T a, T b)) {
       return FutureBuilder(
-          future: future,
-          builder: (context, snapshot) {
-            switch (snapshot.connectionState) {
-              case ConnectionState.none:
-              case ConnectionState.waiting:
-                return Text("loading...");
-              default:
-                if (snapshot.hasError) {
-                  return Text("Error" + snapshot.error.toString());
-                } else {
-                  return _createListView(snapshot.data, f);
-                }
-            }
-          });
+        future: future,
+        builder: (context, snaps) {
+          switch (snaps.connectionState) {
+            case ConnectionState.none:
+            case ConnectionState.waiting:
+              return Text("loading...");
+            default:
+              if (snaps.hasError) {
+                return Text("Error" + snaps.error.toString());
+              } else {
+                return _createListView(snaps.data.build().rebuild((l) => l..sort((a,b) => c(a, b))).toList(), f);
+              }
+          }
+        });
     }
 
     // This method is rerun every time setState is called, for instance as done
@@ -127,9 +131,9 @@ class _MyHomePageState extends State<MyHomePage>
       ),
       body: TabBarView(
         children: [
-          futureBuilder(_read<Fish>((m) => Fish.fromJson(m)), (fish) => fish.name),
-          futureBuilder(Future.value([{"name": "foo"}]), (fish) => fish['name']),
-          futureBuilder(Future.value([{"name": "bar"}]), (fish) => fish['name']),
+          futureBuilder(_read<Fish>((m) => Fish.fromJson(m)), (fish) => fish.name, (a,b) => a.name.compareTo(b.name)),
+          futureBuilder(Future.value([{"name": "foo"}]), (fish) => fish['name'], (a,b) => a['name'].compareTo(b['name'])),
+          futureBuilder(Future.value([{"name": "bar"}]), (fish) => fish['name'], (a,b) => a['name'].compareTo(b['name'])),
         ],
         controller: tabController,
       ),
