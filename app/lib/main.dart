@@ -91,30 +91,30 @@ class _MyHomePageState extends State<MyHomePage>
     );
   }
 
-
-
   @override
   Widget build(BuildContext context) {
-
     FutureBuilder<List<T>> futureBuilder<T>(
-        Future<List<T>> future,
-        String f(T),
-        int c(T a, T b)) {
+        Future<List<T>> future, String f(T), int c(T a, T b)) {
       return FutureBuilder(
-        future: future,
-        builder: (context, snaps) {
-          switch (snaps.connectionState) {
-            case ConnectionState.none:
-            case ConnectionState.waiting:
-              return Text("loading...");
-            default:
-              if (snaps.hasError) {
-                return Text("Error" + snaps.error.toString());
-              } else {
-                return _createListView(snaps.data.build().rebuild((l) => l..sort((a,b) => c(a, b))).toList(), f);
-              }
-          }
-        });
+          future: future,
+          builder: (context, snaps) {
+            switch (snaps.connectionState) {
+              case ConnectionState.none:
+              case ConnectionState.waiting:
+                return Text("loading...");
+              default:
+                if (snaps.hasError) {
+                  return Text("Error" + snaps.error.toString());
+                } else {
+                  return _createListView(
+                      snaps.data
+                          .build()
+                          .rebuild((l) => l..sort((a, b) => c(a, b)))
+                          .toList(),
+                      f);
+                }
+            }
+          });
     }
 
     // This method is rerun every time setState is called, for instance as done
@@ -123,38 +123,51 @@ class _MyHomePageState extends State<MyHomePage>
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: TabBarView(
-        children: [
-          futureBuilder(_read<Fish>((m) => Fish.fromJson(m)), (fish) => fish.name, (a,b) => a.name.compareTo(b.name)),
-          futureBuilder(Future.value([{"name": "foo"}]), (fish) => fish['name'], (a,b) => a['name'].compareTo(b['name'])),
-          futureBuilder(Future.value([{"name": "bar"}]), (fish) => fish['name'], (a,b) => a['name'].compareTo(b['name'])),
-        ],
-        controller: tabController,
-      ),
-      bottomNavigationBar: Material(
-        color: Colors.blue,
-        child: TabBar(
-          tabs: <Tab>[
-            Tab(
-              text: 'Bugs',
-              icon: Icon(Icons.bug_report),
-            ),
-            Tab(
-              text: 'Fish',
-              icon: Icon(Icons.pool),
-            ),
-            Tab(
-              text: 'Furniture',
-              icon: Icon(Icons.beach_access),
-            ),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(widget.title),
+        ),
+        body: TabBarView(
+          children: [
+            futureBuilder(_read<Fish>((m) => Fish.fromJson(m)),
+                (fish) => fish.name, (a, b) => a.name.compareTo(b.name)),
+            futureBuilder(
+                Future.value([
+                  {"name": "foo"}
+                ]),
+                (fish) => fish['name'],
+                (a, b) => a['name'].compareTo(b['name'])),
+            futureBuilder(
+                Future.value([
+                  {"name": "bar"}
+                ]),
+                (fish) => fish['name'],
+                (a, b) => a['name'].compareTo(b['name'])),
           ],
           controller: tabController,
+        ),
+        bottomNavigationBar: Material(
+          color: Colors.blue,
+          child: TabBar(
+            tabs: <Tab>[
+              Tab(
+                text: 'Bugs',
+                icon: Icon(Icons.bug_report),
+              ),
+              Tab(
+                text: 'Fish',
+                icon: Icon(Icons.pool),
+              ),
+              Tab(
+                text: 'Furniture',
+                icon: Icon(Icons.beach_access),
+              ),
+            ],
+            controller: tabController,
+          ),
         ),
       ),
     );
