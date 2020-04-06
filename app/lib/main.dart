@@ -154,12 +154,12 @@ class _MyHomePageState extends State<MyHomePage>
           child: TabBar(
             tabs: <Tab>[
               Tab(
-                text: 'Bugs',
-                icon: Icon(Icons.bug_report),
-              ),
-              Tab(
                 text: 'Fish',
                 icon: Icon(Icons.pool),
+              ),
+              Tab(
+                text: 'Bugs',
+                icon: Icon(Icons.bug_report),
               ),
               Tab(
                 text: 'Furniture',
