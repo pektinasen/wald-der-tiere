@@ -29,17 +29,20 @@ class Bug {
   final int price;
   final String location;
   final String time;
+  final String image;
+
   // final List<String> months_north;
   // final List<String> months_south;
 
   Bug(this.uuid, this.name, this.price, this.location,
-      this.time);
+      this.time, this.image);
 
   Bug.fromJson(Map<String, dynamic> json)
       : uuid = json['uuid'],
         name = json['name'],
         price = json['price'],
         location = json['location'],
-        time = json['time'];
+        time = json['time'],
+        image = json['image_name'];
 
 }

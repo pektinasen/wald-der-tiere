@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage>
                 _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
                 (bug) => bug.name,
                 (a, b) => a.name.compareTo(b.name),
-                (_) => Icon(Icons.access_alarm)),
+                (bug) => Image.asset('assets/images/${bug.image}')),
             futureBuilder(
                 Future.value([
                   {"name": "bar"}
