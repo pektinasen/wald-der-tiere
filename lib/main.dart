@@ -54,11 +54,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   TabController tabController;
+  String _searchTerm;
 
   @override
   void initState() {
     super.initState();
     tabController = TabController(length: 3, vsync: this);
+    _searchTerm = "";
   }
 
   @override
@@ -94,7 +96,11 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     FutureBuilder<List<T>> futureBuilder<T>(
-        Future<List<T>> future, String f(T), int c(T a, T b), Widget leading(T)) {
+        Future<List<T>> future,
+        String f(T),
+        int c(T a, T b),
+        Widget leading(T),
+        bool filter(T)) {
       return FutureBuilder(
           future: future,
           builder: (context, snaps) {
@@ -109,7 +115,11 @@ class _MyHomePageState extends State<MyHomePage>
                   return _createListView(
                       snaps.data
                           .build()
-                          .rebuild((l) => l..sort((a, b) => c(a, b)))
+                          .rebuild(
+                            (l) => l
+                              ..sort((a, b) => c(a, b))
+                              ..where((a) => filter(a))
+                            )
                           .toList(),
                       f,
                       leading);
@@ -131,28 +141,50 @@ class _MyHomePageState extends State<MyHomePage>
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: TabBarView(
-          children: [
-            futureBuilder(
-              _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
-              (fish) => fish.name,
-              (a, b) => a.name.compareTo(b.name),
-              (fish) => Image.asset('assets/images/${fish.image}')),
-            futureBuilder(
-                _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
-                (bug) => bug.name,
-                (a, b) => a.name.compareTo(b.name),
-                (bug) => Image.asset('assets/images/${bug.image}')),
-            futureBuilder(
-                Future.value([
-                  {"name": "bar"}
-                ]),
-                (fish) => fish['name'],
-                (a, b) => a['name'].compareTo(b['name']),
-                (_) => Icon(Icons.access_alarm)),
-          ],
-          controller: tabController,
-        ),
+        body: 
+          Column(
+            children: [
+              TextField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Enter a search term'),
+                    onChanged: (value) {
+                      if (value.length >= 3) {
+                        setState(() {_searchTerm = value;});
+                      }else{
+                        setState(() {_searchTerm = "";});
+                      }}
+                    ),  
+              Expanded(
+                child: TabBarView(
+                  children: [
+                    futureBuilder(
+                        _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
+                        (fish) => fish.name,
+                        (a, b) => a.name.compareTo(b.name),
+                        (fish) => Image.asset('assets/images/${fish.image}'),
+                        (fish) => fish.name.startsWith(_searchTerm)),
+                    futureBuilder(
+                        _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
+                        (bug) => bug.name,
+                        (a, b) => a.name.compareTo(b.name),
+                        (bug) => Image.asset('assets/images/${bug.image}'),
+                        (bug) => bug.name.startsWith(_searchTerm))
+                        ,
+                    futureBuilder(
+                        Future.value([
+                          {"name": "bar"}
+                        ]),
+                        (fish) => fish['name'],
+                        (a, b) => a['name'].compareTo(b['name']),
+                        (_) => Icon(Icons.access_alarm),
+                        (_) => true)
+                  ],
+                controller: tabController,
+                ),
+              ),
+            ]
+          ),
         bottomNavigationBar: Material(
           color: Colors.blue,
           child: TabBar(
