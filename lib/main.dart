@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
 import 'package:built_collection/built_collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:path_provider/path_provider.dart';
+import 'package:wald_der_tiere/widgets/FishListItem.dart';
+import 'package:wald_der_tiere/widgets/BugsListItemBuilder.dart';
 import 'domain.dart';
 
 void main() => runApp(MyApp());
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   void initState() {
     super.initState();
-    tabController = TabController(length: 3, vsync: this);
+    tabController = TabController(length: 2, vsync: this);
     _searchTerm = "";
   }
 
@@ -74,66 +74,35 @@ class _MyHomePageState extends State<MyHomePage>
     return (jsonDecode(contents) as List).map((entry) => f(entry)).toList();
   }
 
-  Widget _createListView<T>(List<T> data, String f(T), Widget leading(T)) {
-    return ListView.builder(
-      itemCount: data.length,
-      itemBuilder: (context, index) => Column(
-        children: <Widget>[
-          ListTile(
-            subtitle: Text('subtitle'),
-            leading: leading(data[index]),
-            title: Text(f(data[index])),
-            trailing: Text('trailing'),
-          ),
-          Divider(
-            height: 2.0,
-          ),
-        ],
-      ),
-    );
+  FutureBuilder<List<T>> _futureBuilder<T>(
+      Future<List<T>> future,
+      Widget listViewBuilder(List<T> _),
+      bool filter(T),
+      int compare(T _, T __)) {
+    return FutureBuilder(
+        future: future,
+        builder: (context, snaps) {
+          switch (snaps.connectionState) {
+            case ConnectionState.none:
+            case ConnectionState.waiting:
+              return Text("loading...");
+            default:
+              if (snaps.hasError) {
+                return Text("Error" + snaps.error.toString());
+              } else {
+                return listViewBuilder(snaps.data
+                    .build()
+                    .rebuild((l) => l
+                      ..where((a) => filter(a))
+                      ..sort((a, b) => compare(a, b)))
+                    .toList());
+              }
+          }
+        });
   }
 
   @override
   Widget build(BuildContext context) {
-    FutureBuilder<List<T>> futureBuilder<T>(
-        Future<List<T>> future,
-        String f(T),
-        int c(T a, T b),
-        Widget leading(T),
-        bool filter(T)) {
-      return FutureBuilder(
-          future: future,
-          builder: (context, snaps) {
-            switch (snaps.connectionState) {
-              case ConnectionState.none:
-              case ConnectionState.waiting:
-                return Text("loading...");
-              default:
-                if (snaps.hasError) {
-                  return Text("Error" + snaps.error.toString());
-                } else {
-                  return _createListView(
-                      snaps.data
-                          .build()
-                          .rebuild(
-                            (l) => l
-                              ..sort((a, b) => c(a, b))
-                              ..where((a) => filter(a))
-                            )
-                          .toList(),
-                      f,
-                      leading);
-                }
-            }
-          });
-    }
-
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -141,50 +110,52 @@ class _MyHomePageState extends State<MyHomePage>
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: 
-          Column(
-            children: [
-              TextField(
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Enter a search term'),
-                    onChanged: (value) {
-                      if (value.length >= 3) {
-                        setState(() {_searchTerm = value;});
-                      }else{
-                        setState(() {_searchTerm = "";});
-                      }}
-                    ),  
-              Expanded(
-                child: TabBarView(
-                  children: [
-                    futureBuilder(
-                        _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
-                        (fish) => fish.name,
-                        (a, b) => a.name.compareTo(b.name),
-                        (fish) => Image.asset('assets/images/${fish.image}'),
-                        (fish) => fish.name.startsWith(_searchTerm)),
-                    futureBuilder(
-                        _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
-                        (bug) => bug.name,
-                        (a, b) => a.name.compareTo(b.name),
-                        (bug) => Image.asset('assets/images/${bug.image}'),
-                        (bug) => bug.name.startsWith(_searchTerm))
-                        ,
-                    futureBuilder(
-                        Future.value([
-                          {"name": "bar"}
-                        ]),
-                        (fish) => fish['name'],
-                        (a, b) => a['name'].compareTo(b['name']),
-                        (_) => Icon(Icons.access_alarm),
-                        (_) => true)
-                  ],
-                controller: tabController,
+        body: Column(children: [
+          TextField(
+              decoration: InputDecoration(
+                  border: InputBorder.none, hintText: 'Enter a search term'),
+              onChanged: (value) {
+                if (value.length >= 3) {
+                  setState(() {
+                    _searchTerm = value;
+                  });
+                } else {
+                  setState(() {
+                    _searchTerm = "";
+                  });
+                }
+              }),
+          Expanded(
+            child: TabBarView(
+              children: [
+                _futureBuilder(
+                    _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
+                    (fishs) => FishListViewBuilder(fishs),
+                    (fish) => fish.name
+                        .toLowerCase()
+                        .startsWith(_searchTerm.toLowerCase()),
+                    (a, b) => a.name.compareTo(b.name)),
+                _futureBuilder(
+                  _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
+                  (bugs) => BugsListViewBuilder(bugs),
+                  (bug) => bug.name
+                      .toLowerCase()
+                      .startsWith(_searchTerm.toLowerCase()),
+                  (a, b) => a.name.compareTo(b.name),
                 ),
-              ),
-            ]
+                // futureBuilder(
+                //     Future.value([
+                //       {"name": "bar"}
+                //     ]),
+                //     (fish) => fish['name'],
+                //     (a, b) => a['name'].compareTo(b['name']),
+                //     (_) => Icon(Icons.access_alarm),
+                //     (_) => true)
+              ],
+              controller: tabController,
+            ),
           ),
+        ]),
         bottomNavigationBar: Material(
           color: Colors.blue,
           child: TabBar(
@@ -197,10 +168,10 @@ class _MyHomePageState extends State<MyHomePage>
                 text: 'Bugs',
                 icon: Icon(Icons.bug_report),
               ),
-              Tab(
-                text: 'Furniture',
-                icon: Icon(Icons.beach_access),
-              ),
+              // Tab(
+              //   text: 'Furniture',
+              //   icon: Icon(Icons.beach_access),
+              // ),
             ],
             controller: tabController,
           ),
