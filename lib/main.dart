@@ -72,14 +72,14 @@ class _MyHomePageState extends State<MyHomePage>
     return (jsonDecode(contents) as List).map((entry) => f(entry)).toList();
   }
 
-  Widget _createListView<T>(List<T> data, String f(T)) {
+  Widget _createListView<T>(List<T> data, String f(T), Widget leading(T)) {
     return ListView.builder(
       itemCount: data.length,
       itemBuilder: (context, index) => Column(
         children: <Widget>[
           ListTile(
             subtitle: Text('subtitle'),
-            leading: Icon(Icons.account_balance),
+            leading: leading(data[index]),
             title: Text(f(data[index])),
             trailing: Text('trailing'),
           ),
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     FutureBuilder<List<T>> futureBuilder<T>(
-        Future<List<T>> future, String f(T), int c(T a, T b)) {
+        Future<List<T>> future, String f(T), int c(T a, T b), Widget leading(T)) {
       return FutureBuilder(
           future: future,
           builder: (context, snaps) {
@@ -111,7 +111,8 @@ class _MyHomePageState extends State<MyHomePage>
                           .build()
                           .rebuild((l) => l..sort((a, b) => c(a, b)))
                           .toList(),
-                      f);
+                      f,
+                      leading);
                 }
             }
           });
@@ -135,17 +136,20 @@ class _MyHomePageState extends State<MyHomePage>
             futureBuilder(
               _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
               (fish) => fish.name,
-              (a, b) => a.name.compareTo(b.name)),
+              (a, b) => a.name.compareTo(b.name),
+              (fish) => Image.asset('assets/images/${fish.image}')),
             futureBuilder(
                 _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
                 (bug) => bug.name,
-                (a, b) => a.name.compareTo(b.name)),
+                (a, b) => a.name.compareTo(b.name),
+                (_) => Icon(Icons.access_alarm)),
             futureBuilder(
                 Future.value([
                   {"name": "bar"}
                 ]),
                 (fish) => fish['name'],
-                (a, b) => a['name'].compareTo(b['name'])),
+                (a, b) => a['name'].compareTo(b['name']),
+                (_) => Icon(Icons.access_alarm)),
           ],
           controller: tabController,
         ),
