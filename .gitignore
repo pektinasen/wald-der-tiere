@@ -8,7 +8,11 @@
 .buildlog/
 .history
 .svn/
+
+# Python
+__pycache__/
 .mypy_cache/
+.ipynb_checkpoints/
 
 # IntelliJ related
 *.iml
@@ -23,6 +27,7 @@
 **/doc/api/
 .dart_tool/
 .flutter-plugins
+.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/

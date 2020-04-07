@@ -133,11 +133,11 @@ class _MyHomePageState extends State<MyHomePage>
         body: TabBarView(
           children: [
             futureBuilder(
-              _read<Fish>('fish_uuid.json', (f) => Fish.fromJson(f)),
+              _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
               (fish) => fish.name,
               (a, b) => a.name.compareTo(b.name)),
             futureBuilder(
-                _read<Bug>("bugs_uuid.json", (b) => Bug.fromJson(b)),
+                _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
                 (bug) => bug.name,
                 (a, b) => a.name.compareTo(b.name)),
             futureBuilder(

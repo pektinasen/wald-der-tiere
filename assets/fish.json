@@ -1,0 +1,802 @@
+[
+  {
+    "uuid": "ef8d782b-e611-4e2d-b8a6-c65ccac2a50a",
+    "name": "Bitterling",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ea/NH-Icon-bitterling.png/revision/latest?cb=20200401003128",
+    "price": 900,
+    "location": "River",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "e-ea-NH-Icon-bitterling.png"
+  },
+  {
+    "uuid": "8f0fb585-a7cc-42a7-b6a3-8ab9212261f7",
+    "name": "Pale chub",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2c/NH-Icon-palechub.png/revision/latest?cb=20200401003129",
+    "price": 200,
+    "location": "River",
+    "shadow": "1",
+    "time": "9 AM - 4 PM",
+    "image_name": "2-2c-NH-Icon-palechub.png"
+  },
+  {
+    "uuid": "9a37e031-d4cb-4c1f-8d88-4722ca56da9e",
+    "name": "Crucian carp",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/03/NH-Icon-cruciancarp.png/revision/latest?cb=20200401003129",
+    "price": 160,
+    "location": "River",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "0-03-NH-Icon-cruciancarp.png"
+  },
+  {
+    "uuid": "c4b8dba4-9bac-4d4f-a379-46d1a5d623bc",
+    "name": "Dace",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/22/NH-Icon-dace.png/revision/latest?cb=20200401003129",
+    "price": 240,
+    "location": "River",
+    "shadow": "3",
+    "time": "4 PM - 9 AM",
+    "image_name": "2-22-NH-Icon-dace.png"
+  },
+  {
+    "uuid": "5620d3f3-037f-444a-a002-26be69d6f058",
+    "name": "Carp",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2c/NH-Icon-carp.png/revision/latest?cb=20200401003129",
+    "price": 300,
+    "location": "Pond",
+    "shadow": "4",
+    "time": "All day",
+    "image_name": "2-2c-NH-Icon-carp.png"
+  },
+  {
+    "uuid": "2bf0db1d-45f9-4a72-a706-85d0e2e48ebd",
+    "name": "Koi",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/74/NH-Icon-koi.png/revision/latest?cb=20200401003129",
+    "price": 4000,
+    "location": "Pond",
+    "shadow": "4",
+    "time": "4 PM - 9 AM",
+    "image_name": "7-74-NH-Icon-koi.png"
+  },
+  {
+    "uuid": "947236c5-edcf-4796-a4f4-709d3474138d",
+    "name": "Goldfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/NH-Icon-goldfish.png/revision/latest?cb=20200401003129",
+    "price": 1300,
+    "location": "Pond",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "e-ed-NH-Icon-goldfish.png"
+  },
+  {
+    "uuid": "8c7b99ef-3dab-4467-8850-b03308f5e838",
+    "name": "Pop-eyed goldfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c9/NH-Icon-popeyedgoldfish.png/revision/latest?cb=20200401003129",
+    "price": 1300,
+    "location": "Pond",
+    "shadow": "1",
+    "time": "9 AM - 4 PM",
+    "image_name": "c-c9-NH-Icon-popeyedgoldfish.png"
+  },
+  {
+    "uuid": "b486544e-ae57-4c38-b4e9-056c6336b953",
+    "name": "Ranchu goldfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f9/NH-Icon-ranchugoldfish.png/revision/latest?cb=20200401003129",
+    "price": 4500,
+    "location": "Pond",
+    "shadow": "2",
+    "time": "9 AM - 4 PM",
+    "image_name": "f-f9-NH-Icon-ranchugoldfish.png"
+  },
+  {
+    "uuid": "e4be6321-3e8c-4f09-b7d0-679d5e517378",
+    "name": "Killifish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c3/NH-Icon-killifish.png/revision/latest?cb=20200401003129",
+    "price": 300,
+    "location": "Pond",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "c-c3-NH-Icon-killifish.png"
+  },
+  {
+    "uuid": "ef3a0b84-170d-4d9d-b881-b079fc67d67f",
+    "name": "Crawfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/cd/NH-Icon-crawfish.png/revision/latest?cb=20200401003129",
+    "price": 200,
+    "location": "Pond",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "c-cd-NH-Icon-crawfish.png"
+  },
+  {
+    "uuid": "54be4d8a-278d-4ca3-bdef-1d67d77ab16e",
+    "name": "Soft-shelled turtle",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c3/NH-Icon-softshelledturtle.png/revision/latest?cb=20200401003129",
+    "price": 3750,
+    "location": "River",
+    "shadow": "4",
+    "time": "4 PM - 9 AM",
+    "image_name": "c-c3-NH-Icon-softshelledturtle.png"
+  },
+  {
+    "uuid": "5aeb2365-de1b-487d-acb8-b4005d984403",
+    "name": "Snapping Turtle",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/24/NH-Icon-snappingturtle.png/revision/latest?cb=20200401003129",
+    "price": 5000,
+    "location": "River",
+    "shadow": "5",
+    "time": "9 PM - 4 AM",
+    "image_name": "2-24-NH-Icon-snappingturtle.png"
+  },
+  {
+    "uuid": "96a2f1fb-cff8-4e23-a5f5-a646f3f4cfd7",
+    "name": "Tadpole",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1c/NH-Icon-tadpole.png/revision/latest?cb=20200401003129",
+    "price": 100,
+    "location": "Pond",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "1-1c-NH-Icon-tadpole.png"
+  },
+  {
+    "uuid": "bc19f45b-33f4-425a-878a-ebd7ef8506d6",
+    "name": "Frog (fish)",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6b/NH-Icon-frog.png/revision/latest?cb=20200401003129",
+    "price": 120,
+    "location": "Pond",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "6-6b-NH-Icon-frog.png"
+  },
+  {
+    "uuid": "cdf283a6-6b4d-4bcf-81fa-2b04c3659764",
+    "name": "Freshwater goby",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ee/NH-Icon-freshwatergoby.png/revision/latest?cb=20200401003129",
+    "price": 400,
+    "location": "River",
+    "shadow": "2",
+    "time": "4 PM - 9 AM",
+    "image_name": "e-ee-NH-Icon-freshwatergoby.png"
+  },
+  {
+    "uuid": "638e7a59-75a0-4b48-aa15-dcdff4f2e04c",
+    "name": "Loach",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/77/NH-Icon-loach.png/revision/latest?cb=20200401003129",
+    "price": 400,
+    "location": "River",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "7-77-NH-Icon-loach.png"
+  },
+  {
+    "uuid": "2a073a40-d10a-4547-99fd-dc2605d4c760",
+    "name": "Catfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/29/NH-Icon-catfish.png/revision/latest?cb=20200401003129",
+    "price": 800,
+    "location": "Pond",
+    "shadow": "4",
+    "time": "4 PM - 9 AM",
+    "image_name": "2-29-NH-Icon-catfish.png"
+  },
+  {
+    "uuid": "41f7798c-e876-4c7a-8b37-0198410200ea",
+    "name": "Giant snakehead",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0c/NH-Icon-giantsnakehead.png/revision/latest?cb=20200401003129",
+    "price": 5500,
+    "location": "Pond",
+    "shadow": "5",
+    "time": "9 AM - 4 PM",
+    "image_name": "0-0c-NH-Icon-giantsnakehead.png"
+  },
+  {
+    "uuid": "9da21eb8-c99a-41fb-a1bf-2d4b24d06fe3",
+    "name": "Bluegill",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/69/NH-Icon-bluegill.png/revision/latest?cb=20200401003129",
+    "price": 180,
+    "location": "River",
+    "shadow": "2",
+    "time": "9 AM - 4 PM",
+    "image_name": "6-69-NH-Icon-bluegill.png"
+  },
+  {
+    "uuid": "86e692bc-e4c6-4c51-866b-4f8bd1fffe2c",
+    "name": "Yellow perch",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1d/NH-Icon-yellowperch.png/revision/latest?cb=20200401003129",
+    "price": 300,
+    "location": "River",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "1-1d-NH-Icon-yellowperch.png"
+  },
+  {
+    "uuid": "7d5133bf-31e3-4a3e-8637-67bb5a2d24f8",
+    "name": "Black bass",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e2/NH-Icon-blackbass.png/revision/latest?cb=20200401003129",
+    "price": 400,
+    "location": "River",
+    "shadow": "4",
+    "time": "All day",
+    "image_name": "e-e2-NH-Icon-blackbass.png"
+  },
+  {
+    "uuid": "b353cecc-692b-459c-b795-dcbf58e636b0",
+    "name": "Tilapia",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/53/NH-Icon-tilapia.png/revision/latest?cb=20200401003129",
+    "price": 800,
+    "location": "River",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "5-53-NH-Icon-tilapia.png"
+  },
+  {
+    "uuid": "ea858fbd-dc4d-43a9-ab3b-cf5256815b50",
+    "name": "Pike",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/dc/NH-Icon-pike.png/revision/latest?cb=20200401003130",
+    "price": 1800,
+    "location": "River",
+    "shadow": "5",
+    "time": "All day",
+    "image_name": "d-dc-NH-Icon-pike.png"
+  },
+  {
+    "uuid": "af9bcf4e-91ab-4bb4-9149-3cf92afef989",
+    "name": "Pond smelt",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/41/NH-Icon-pondsmelt.png/revision/latest?cb=20200401003130",
+    "price": 500,
+    "location": "River",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "4-41-NH-Icon-pondsmelt.png"
+  },
+  {
+    "uuid": "dbb38106-776f-4797-945b-95bb58cd3c18",
+    "name": "Sweetfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/40/NH-Icon-sweetfish.png/revision/latest?cb=20200401003129",
+    "price": 900,
+    "location": "River",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "4-40-NH-Icon-sweetfish.png"
+  },
+  {
+    "uuid": "db28da32-5d0d-4808-b86a-941f515b2db5",
+    "name": "Cherry salmon",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5f/NH-Icon-cherrysalmon.png/revision/latest?cb=20200401003129",
+    "price": 1000,
+    "location": "River (Clifftop)",
+    "shadow": "3",
+    "time": "4 PM - 9 AM",
+    "image_name": "5-5f-NH-Icon-cherrysalmon.png"
+  },
+  {
+    "uuid": "dadb2d3a-6599-470e-aa37-876674ddc16b",
+    "name": "Char",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/15/NH-Icon-char.png/revision/latest?cb=20200401003129",
+    "price": 3800,
+    "location": "River (Clifftop)  Pond",
+    "shadow": "3",
+    "time": "4 PM - 9 AM",
+    "image_name": "1-15-NH-Icon-char.png"
+  },
+  {
+    "uuid": "516ea0ea-8a2c-49ec-9557-d158d7b3c3d3",
+    "name": "Golden trout",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5c/NH-Icon-goldentrout.png/revision/latest?cb=20200401003129",
+    "price": 15000,
+    "location": "River (Clifftop)",
+    "shadow": "3",
+    "time": "4 PM - 9 AM",
+    "image_name": "5-5c-NH-Icon-goldentrout.png"
+  },
+  {
+    "uuid": "1675fcd8-eaa2-4f80-8199-c88ce53eee1c",
+    "name": "Stringfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7b/NH-Icon-stringfish.png/revision/latest?cb=20200401003129",
+    "price": 15000,
+    "location": "River (Clifftop)",
+    "shadow": "5",
+    "time": "4 PM - 9 AM",
+    "image_name": "7-7b-NH-Icon-stringfish.png"
+  },
+  {
+    "uuid": "078f10b5-6a65-458c-83d7-10d077ac2b99",
+    "name": "Salmon",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/fb/NH-Icon-salmon.png/revision/latest?cb=20200401003129",
+    "price": 700,
+    "location": "River (Mouth)",
+    "shadow": "4",
+    "time": "All day",
+    "image_name": "f-fb-NH-Icon-salmon.png"
+  },
+  {
+    "uuid": "db1935cf-6881-411a-a681-f0643dca6016",
+    "name": "King salmon",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/fd/NH-Icon-kingsalmon.png/revision/latest?cb=20200401003129",
+    "price": 1800,
+    "location": "River (Mouth)",
+    "shadow": "6",
+    "time": "All day",
+    "image_name": "f-fd-NH-Icon-kingsalmon.png"
+  },
+  {
+    "uuid": "8f453be4-5e09-49c8-8b5e-55566bc8940e",
+    "name": "Mitten crab",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e3/NH-Icon-mittencrab.png/revision/latest?cb=20200401003129",
+    "price": 2000,
+    "location": "River",
+    "shadow": "2",
+    "time": "4 PM - 9 AM",
+    "image_name": "e-e3-NH-Icon-mittencrab.png"
+  },
+  {
+    "uuid": "51fe59a4-aaae-4724-9b04-438420da9837",
+    "name": "Guppy",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/63/NH-Icon-guppy.png/revision/latest?cb=20200401003129",
+    "price": 1300,
+    "location": "River",
+    "shadow": "1",
+    "time": "9 AM - 4 PM",
+    "image_name": "6-63-NH-Icon-guppy.png"
+  },
+  {
+    "uuid": "e64f592e-5d65-498f-bb03-50acee7e5f41",
+    "name": "Nibble fish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/89/NH-Icon-nibblefish.png/revision/latest?cb=20200401003129",
+    "price": 1500,
+    "location": "River",
+    "shadow": "1",
+    "time": "9 AM - 4 PM",
+    "image_name": "8-89-NH-Icon-nibblefish.png"
+  },
+  {
+    "uuid": "663f0848-3580-4679-b866-97053883c713",
+    "name": "Angelfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/63/NH-Icon-angelfish.png/revision/latest?cb=20200401003128",
+    "price": 3000,
+    "location": "River",
+    "shadow": "2",
+    "time": "4 PM - 9 AM",
+    "image_name": "6-63-NH-Icon-angelfish.png"
+  },
+  {
+    "uuid": "53bfb251-a0b7-494f-a505-14f6d99718a1",
+    "name": "Betta",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7c/NH-Icon-betta.png/revision/latest?cb=20200401003129",
+    "price": 2500,
+    "location": "River",
+    "shadow": "2",
+    "time": "9 AM - 4 PM",
+    "image_name": "7-7c-NH-Icon-betta.png"
+  },
+  {
+    "uuid": "316c51ce-9283-4e66-ba38-30a7f518d711",
+    "name": "Neon tetra",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/da/NH-Icon-neontetra.png/revision/latest?cb=20200401003129",
+    "price": 500,
+    "location": "River",
+    "shadow": "1",
+    "time": "9 AM - 4 PM",
+    "image_name": "d-da-NH-Icon-neontetra.png"
+  },
+  {
+    "uuid": "08f30217-7e90-4d68-b3de-c83723e954ab",
+    "name": "Rainbowfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/68/NH-Icon-rainbowfish.png/revision/latest?cb=20200401003129",
+    "price": 800,
+    "location": "River",
+    "shadow": "1",
+    "time": "9 AM - 4 PM",
+    "image_name": "6-68-NH-Icon-rainbowfish.png"
+  },
+  {
+    "uuid": "24c67e03-7d35-419f-99eb-f0a6e86e3a23",
+    "name": "Piranha",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b9/NH-Icon-piranha.png/revision/latest?cb=20200401003130",
+    "price": 2500,
+    "location": "River",
+    "shadow": "2",
+    "time": "9 AM - 4 PM & 9 PM - 4 AM",
+    "image_name": "b-b9-NH-Icon-piranha.png"
+  },
+  {
+    "uuid": "0e028b6e-0177-46dc-bd74-0a55bfe24a96",
+    "name": "Arowana",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bf/NH-Icon-arowana.png/revision/latest?cb=20200401003128",
+    "price": 10000,
+    "location": "River",
+    "shadow": "4",
+    "time": "4 PM - 9 AM",
+    "image_name": "b-bf-NH-Icon-arowana.png"
+  },
+  {
+    "uuid": "8cfe5adc-bc48-426c-b26e-0a0439dd85d0",
+    "name": "Dorado",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/df/NH-Icon-dorado.png/revision/latest?cb=20200401003129",
+    "price": 15000,
+    "location": "River",
+    "shadow": "5",
+    "time": "4 AM - 9 PM",
+    "image_name": "d-df-NH-Icon-dorado.png"
+  },
+  {
+    "uuid": "cdd037c5-fff3-4e74-a6b5-c2e018867f1e",
+    "name": "Gar",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9f/NH-Icon-gar.png/revision/latest?cb=20200401003129",
+    "price": 6000,
+    "location": "Pond",
+    "shadow": "6",
+    "time": "4 PM - 9 AM",
+    "image_name": "9-9f-NH-Icon-gar.png"
+  },
+  {
+    "uuid": "325778d7-7ba6-4a07-88d6-aab40db13aa0",
+    "name": "Arapaima",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7f/NH-Icon-arapaima.png/revision/latest?cb=20200401003128",
+    "price": 10000,
+    "location": "River",
+    "shadow": "6",
+    "time": "4 PM - 9 AM",
+    "image_name": "7-7f-NH-Icon-arapaima.png"
+  },
+  {
+    "uuid": "e795452d-a0b6-4dca-9a87-d81bc2f5817e",
+    "name": "Saddled bichir",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a0/NH-Icon-saddledbichir.png/revision/latest?cb=20200401003130",
+    "price": 4000,
+    "location": "River",
+    "shadow": "4",
+    "time": "9 PM - 4 AM",
+    "image_name": "a-a0-NH-Icon-saddledbichir.png"
+  },
+  {
+    "uuid": "92ee0499-62cb-4c7e-a241-c91369957704",
+    "name": "Sturgeon",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/98/NH-Icon-sturgeon.png/revision/latest?cb=20200401003129",
+    "price": 10000,
+    "location": "River (Mouth)",
+    "shadow": "6",
+    "time": "All day",
+    "image_name": "9-98-NH-Icon-sturgeon.png"
+  },
+  {
+    "uuid": "bc28f5ac-5811-4395-a50a-cb964565ac51",
+    "name": "Sea butterfly",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/8f/NH-Icon-seabutterfly.png/revision/latest?cb=20200401003129",
+    "price": 1000,
+    "location": "Sea",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "8-8f-NH-Icon-seabutterfly.png"
+  },
+  {
+    "uuid": "c964a6c5-691a-4191-a36c-424eb0adb919",
+    "name": "Sea horse",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/55/NH-Icon-seahorse.png/revision/latest?cb=20200401003129",
+    "price": 1100,
+    "location": "Sea",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "5-55-NH-Icon-seahorse.png"
+  },
+  {
+    "uuid": "9719eb79-9841-4a91-b41a-a2d7e59bdb61",
+    "name": "Clownfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2f/NH-Icon-clownfish.png/revision/latest?cb=20200401003129",
+    "price": 650,
+    "location": "Sea",
+    "shadow": "1",
+    "time": "All day",
+    "image_name": "2-2f-NH-Icon-clownfish.png"
+  },
+  {
+    "uuid": "312cf0e1-ccdc-43af-931b-05da759894b7",
+    "name": "Surgeonfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/11/NH-Icon-surgeonfish.png/revision/latest?cb=20200401003129",
+    "price": 1000,
+    "location": "Sea",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "1-11-NH-Icon-surgeonfish.png"
+  },
+  {
+    "uuid": "32a0f8f0-625d-4c5b-a032-870c0fa138eb",
+    "name": "Butterfly fish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/8e/NH-Icon-butterflyfish.png/revision/latest?cb=20200401003129",
+    "price": 1000,
+    "location": "Sea",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "8-8e-NH-Icon-butterflyfish.png"
+  },
+  {
+    "uuid": "f4b7198a-278c-4f96-9b2b-cef3007fe9f1",
+    "name": "Napoleonfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6f/NH-Icon-napoleonfish.png/revision/latest?cb=20200401003129",
+    "price": 10000,
+    "location": "Sea",
+    "shadow": "6",
+    "time": "4 AM - 9 PM",
+    "image_name": "6-6f-NH-Icon-napoleonfish.png"
+  },
+  {
+    "uuid": "90c445f9-da2c-40db-9159-b3070cf85b85",
+    "name": "Zebra turkeyfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1c/NH-Icon-zebraturkeyfish.png/revision/latest?cb=20200401003130",
+    "price": 500,
+    "location": "Sea",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "1-1c-NH-Icon-zebraturkeyfish.png"
+  },
+  {
+    "uuid": "fb860e9a-64dd-40ac-b2ce-9a3121b3ba29",
+    "name": "Blowfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/39/NH-Icon-blowfish.png/revision/latest?cb=20200401003129",
+    "price": 5000,
+    "location": "Sea",
+    "shadow": "3",
+    "time": "9 PM - 4 AM",
+    "image_name": "3-39-NH-Icon-blowfish.png"
+  },
+  {
+    "uuid": "09fdab1b-7b05-4bf3-a64b-1fa3ef6febc1",
+    "name": "Puffer fish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1f/NH-Icon-pufferfish.png/revision/latest?cb=20200401003130",
+    "price": 250,
+    "location": "Sea",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "1-1f-NH-Icon-pufferfish.png"
+  },
+  {
+    "uuid": "b0233881-b613-4dfe-95ff-9aa296b784d0",
+    "name": "Anchovy (fish)",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/24/NH-Icon-anchovy.png/revision/latest?cb=20200401003129",
+    "price": 200,
+    "location": "Sea",
+    "shadow": "2",
+    "time": "4 AM - 9 PM",
+    "image_name": "2-24-NH-Icon-anchovy.png"
+  },
+  {
+    "uuid": "8b1c4239-ee54-43e5-a616-d802d475f48f",
+    "name": "Horse mackerel",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d5/NH-Icon-horsemackerel.png/revision/latest?cb=20200401003129",
+    "price": 150,
+    "location": "Sea",
+    "shadow": "2",
+    "time": "All day",
+    "image_name": "d-d5-NH-Icon-horsemackerel.png"
+  },
+  {
+    "uuid": "4e8976b5-7119-4397-b2e2-794f4d95da9a",
+    "name": "Barred knifejaw",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/8c/NH-Icon-barredknifejaw.png/revision/latest?cb=20200401003128",
+    "price": 5000,
+    "location": "Sea",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "8-8c-NH-Icon-barredknifejaw.png"
+  },
+  {
+    "uuid": "79ab458e-3bcc-47f6-a8c8-73b238c91b37",
+    "name": "Sea bass",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/22/NH-Icon-seabass.png/revision/latest?cb=20200401003130",
+    "price": 400,
+    "location": "Sea",
+    "shadow": "5",
+    "time": "All day",
+    "image_name": "2-22-NH-Icon-seabass.png"
+  },
+  {
+    "uuid": "b5d50ec7-3eb8-4992-a239-0af1ca6a04fb",
+    "name": "Red snapper",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/dd/NH-Icon-redsnapper.png/revision/latest?cb=20200401003130",
+    "price": 3000,
+    "location": "Sea",
+    "shadow": "4",
+    "time": "All day",
+    "image_name": "d-dd-NH-Icon-redsnapper.png"
+  },
+  {
+    "uuid": "88edad42-8e5c-4d33-ab00-5128e9a40d43",
+    "name": "Dab",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c6/NH-Icon-dab.png/revision/latest?cb=20200401003129",
+    "price": 300,
+    "location": "Sea",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "c-c6-NH-Icon-dab.png"
+  },
+  {
+    "uuid": "6692a81c-061e-4016-b231-f93bfef838dd",
+    "name": "Olive flounder",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9e/NH-Icon-oliveflounder.png/revision/latest?cb=20200401003129",
+    "price": 800,
+    "location": "Sea",
+    "shadow": "5",
+    "time": "All day",
+    "image_name": "9-9e-NH-Icon-oliveflounder.png"
+  },
+  {
+    "uuid": "24cfcbba-834d-48b3-915a-7a7e7f477461",
+    "name": "Squid",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3b/NH-Icon-squid.png/revision/latest?cb=20200401003130",
+    "price": 500,
+    "location": "Sea",
+    "shadow": "3",
+    "time": "All day",
+    "image_name": "3-3b-NH-Icon-squid.png"
+  },
+  {
+    "uuid": "e47603dc-2ee0-4790-a3c6-1cbb964f9cfa",
+    "name": "Moray eel",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e5/NH-Icon-morayeel.png/revision/latest?cb=20200401003130",
+    "price": 2000,
+    "location": "Sea",
+    "shadow": "Narrow",
+    "time": "All day",
+    "image_name": "e-e5-NH-Icon-morayeel.png"
+  },
+  {
+    "uuid": "1eefca72-3961-478b-8445-740888b872b3",
+    "name": "Ribbon eel",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/ac/NH-Icon-ribboneel.png/revision/latest?cb=20200401003129",
+    "price": 600,
+    "location": "Sea",
+    "shadow": "Narrow",
+    "time": "All day",
+    "image_name": "a-ac-NH-Icon-ribboneel.png"
+  },
+  {
+    "uuid": "f6c2e077-c408-406b-9497-7a408d186ed3",
+    "name": "Tuna",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/50/NH-Icon-tuna.png/revision/latest?cb=20200401003129",
+    "price": 7000,
+    "location": "Pier",
+    "shadow": "6",
+    "time": "All day",
+    "image_name": "5-50-NH-Icon-tuna.png"
+  },
+  {
+    "uuid": "284ca150-b36b-4347-818f-872d558053ea",
+    "name": "Blue marlin",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2f/NH-Icon-bluemarlin.png/revision/latest?cb=20200401003129",
+    "price": 10000,
+    "location": "Pier",
+    "shadow": "6",
+    "time": "All day",
+    "image_name": "2-2f-NH-Icon-bluemarlin.png"
+  },
+  {
+    "uuid": "cffede39-d844-42ff-9dc9-beeaf3915806",
+    "name": "Giant trevally",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7b/NH-Icon-gianttrevally.png/revision/latest?cb=20200401003129",
+    "price": 4500,
+    "location": "Pier",
+    "shadow": "5",
+    "time": "All day",
+    "image_name": "7-7b-NH-Icon-gianttrevally.png"
+  },
+  {
+    "uuid": "b66a6b4f-7389-4d04-bd42-1c0de97487db",
+    "name": "Mahi-mahi",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/82/NH-Icon-mahimahi.png/revision/latest?cb=20200401003129",
+    "price": 6000,
+    "location": "Pier",
+    "shadow": "5",
+    "time": "All day",
+    "image_name": "8-82-NH-Icon-mahimahi.png"
+  },
+  {
+    "uuid": "045956dc-7677-4272-8daf-da0c4fcc5733",
+    "name": "Ocean sunfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/52/NH-Icon-oceansunfish.png/revision/latest?cb=20200401003129",
+    "price": 4000,
+    "location": "Sea",
+    "shadow": "6 (Fin)",
+    "time": "4 AM - 9 PM",
+    "image_name": "5-52-NH-Icon-oceansunfish.png"
+  },
+  {
+    "uuid": "7514b7d5-08b0-4baf-b5e0-71aba87aecbb",
+    "name": "Ray",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/db/NH-Icon-ray.png/revision/latest?cb=20200401003129",
+    "price": 3000,
+    "location": "Sea",
+    "shadow": "5",
+    "time": "4 AM - 9 PM",
+    "image_name": "d-db-NH-Icon-ray.png"
+  },
+  {
+    "uuid": "48e3c924-24a9-416a-b235-0c708c23d104",
+    "name": "Saw shark",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/73/NH-Icon-sawshark.png/revision/latest?cb=20200401003129",
+    "price": 12000,
+    "location": "Sea",
+    "shadow": "6 (Fin)",
+    "time": "4 PM - 9 AM",
+    "image_name": "7-73-NH-Icon-sawshark.png"
+  },
+  {
+    "uuid": "3aae4b59-9023-4047-88af-9f639bf0de7f",
+    "name": "Hammerhead shark",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/25/NH-Icon-hammerheadshark.png/revision/latest?cb=20200401003129",
+    "price": 8000,
+    "location": "Sea",
+    "shadow": "6 (Fin)",
+    "time": "4 PM - 9 AM",
+    "image_name": "2-25-NH-Icon-hammerheadshark.png"
+  },
+  {
+    "uuid": "0979b95a-8be7-4e07-9187-081e31c0de8d",
+    "name": "Great white shark",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/38/NH-Icon-greatwhiteshark.png/revision/latest?cb=20200401003129",
+    "price": 15000,
+    "location": "Sea",
+    "shadow": "6 (Fin)",
+    "time": "4 PM - 9 AM",
+    "image_name": "3-38-NH-Icon-greatwhiteshark.png"
+  },
+  {
+    "uuid": "9dcf57b7-6f82-42c0-b211-a54be2dae57b",
+    "name": "Whale shark",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1c/NH-Icon-whaleshark.png/revision/latest?cb=20200401003129",
+    "price": 13000,
+    "location": "Sea",
+    "shadow": "6 (Fin)",
+    "time": "All day",
+    "image_name": "1-1c-NH-Icon-whaleshark.png"
+  },
+  {
+    "uuid": "60db5d35-d036-4d7c-a2e1-314368e7e147",
+    "name": "Suckerfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b9/NH-Icon-suckerfish.png/revision/latest?cb=20200401003131",
+    "price": 1500,
+    "location": "Sea",
+    "shadow": "4 (Fin)",
+    "time": "All day",
+    "image_name": "b-b9-NH-Icon-suckerfish.png"
+  },
+  {
+    "uuid": "89183205-1bbd-4e76-a1df-e777ffbe0b4f",
+    "name": "Football fish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a5/NH-Icon-footballfish.png/revision/latest?cb=20200401003129",
+    "price": 2500,
+    "location": "Sea",
+    "shadow": "4",
+    "time": "4 PM - 9 AM",
+    "image_name": "a-a5-NH-Icon-footballfish.png"
+  },
+  {
+    "uuid": "d9065b7e-f52e-49c1-b452-beb1388455ae",
+    "name": "Oarfish",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/33/NH-Icon-oarfish.png/revision/latest?cb=20200401003129",
+    "price": 9000,
+    "location": "Sea",
+    "shadow": "6",
+    "time": "All day",
+    "image_name": "3-33-NH-Icon-oarfish.png"
+  },
+  {
+    "uuid": "b35a3da7-92c1-4e06-b179-e125249401c5",
+    "name": "Barreleye",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c7/NH-Icon-barreleye.png/revision/latest?cb=20200401003128",
+    "price": 15000,
+    "location": "Sea",
+    "shadow": "2",
+    "time": "9 PM - 4 AM",
+    "image_name": "c-c7-NH-Icon-barreleye.png"
+  },
+  {
+    "uuid": "090086a6-d702-472c-95cc-e9b2501e0a29",
+    "name": "Coelacanth",
+    "image_url": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/31/NH-Icon-coelacanth.png/revision/latest?cb=20200401003129",
+    "price": 15000,
+    "location": "Sea",
+    "shadow": "6",
+    "time": "All day",
+    "image_name": "3-31-NH-Icon-coelacanth.png"
+  }
+]
