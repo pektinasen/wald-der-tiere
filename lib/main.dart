@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage>
     super.dispose();
   }
 
-  Future<List<T>> _read<T>(String fileName, T f(Map<String, dynamic> _)) async {
+  static Future<List<T>> _read<T>(String fileName, T f(Map<String, dynamic> _)) async {
     print("reading");
     final contents = await rootBundle.loadString("assets/$fileName");
     return (jsonDecode(contents) as List).map((entry) => f(entry)).toList();
@@ -102,6 +102,9 @@ class _MyHomePageState extends State<MyHomePage>
         });
   }
 
+  final Future<List<Fish>> fishFuture =  _read<Fish>('fish.json', (f) => Fish.fromJson(f));
+  final Future<List<Bug>> bugFuture =  _read<Bug>('bugs.json', (f) => Bug.fromJson(f));
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -130,18 +133,18 @@ class _MyHomePageState extends State<MyHomePage>
             child: TabBarView(
               children: [
                 _futureBuilder(
-                    _read<Fish>('fish.json', (f) => Fish.fromJson(f)),
+                    fishFuture,
                     (fishs) => FishListViewBuilder(fishs),
                     (fish) => fish.name
                         .toLowerCase()
-                        .startsWith(_searchTerm.toLowerCase()),
+                        .contains(_searchTerm.toLowerCase()),
                     (a, b) => a.name.compareTo(b.name)),
                 _futureBuilder(
-                  _read<Bug>("bugs.json", (b) => Bug.fromJson(b)),
+                  bugFuture,
                   (bugs) => BugsListViewBuilder(bugs),
                   (bug) => bug.name
                       .toLowerCase()
-                      .startsWith(_searchTerm.toLowerCase()),
+                      .contains(_searchTerm.toLowerCase()),
                   (a, b) => a.name.compareTo(b.name),
                 ),
                 // futureBuilder(
