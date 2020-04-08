@@ -70,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   Future<List<T>> _read<T>(String fileName, T f(Map<String, dynamic> _)) async {
+    print("reading");
     final contents = await rootBundle.loadString("assets/$fileName");
     return (jsonDecode(contents) as List).map((entry) => f(entry)).toList();
   }

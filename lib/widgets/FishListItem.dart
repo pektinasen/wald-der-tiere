@@ -13,7 +13,7 @@ class FishListViewBuilder extends StatelessWidget {
     return ListView.builder(
       itemCount: fish.length,
       itemBuilder: (context, index) {
-        print(fish[index]);
+
         return Column(
           children: <Widget>[
             ListTile(

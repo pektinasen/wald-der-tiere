@@ -19,14 +19,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  built_collection: ^4.3.2
+  built_collection:
+  dataclass: 0.3.0
   cupertino_icons: ^0.1.2
-  path_provider: ^1.6.5
-  provider: ^4.0.4
+  path_provider: 
+  provider:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  pedantic: ^1.8.0
+  dataclass_generator: 0.3.0
+  build_runner: 1.7.1
 
 
 # For information on the generic Dart part of this file, see the
