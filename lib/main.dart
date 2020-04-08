@@ -115,20 +115,25 @@ class _MyHomePageState extends State<MyHomePage>
           title: Text(widget.title),
         ),
         body: Column(children: [
-          TextField(
-              decoration: InputDecoration(
-                  border: InputBorder.none, hintText: 'Enter a search term'),
-              onChanged: (value) {
-                if (value.length >= 3) {
-                  setState(() {
-                    _searchTerm = value;
-                  });
-                } else {
-                  setState(() {
-                    _searchTerm = "";
-                  });
-                }
-              }),
+          Container(
+            padding: EdgeInsets.all(10.0),
+
+            child: TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(), 
+                    hintText: 'Enter a search term'),
+                onChanged: (value) {
+                  if (value.length >= 3) {
+                    setState(() {
+                      _searchTerm = value;
+                    });
+                  } else {
+                    setState(() {
+                      _searchTerm = "";
+                    });
+                  }
+                }),
+          ),
           Expanded(
             child: TabBarView(
               children: [
