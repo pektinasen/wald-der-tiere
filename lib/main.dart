@@ -69,7 +69,8 @@ class _MyHomePageState extends State<MyHomePage>
     super.dispose();
   }
 
-  static Future<List<T>> _read<T>(String fileName, T f(Map<String, dynamic> _)) async {
+  static Future<List<T>> _read<T>(
+      String fileName, T f(Map<String, dynamic> _)) async {
     print("reading");
     final contents = await rootBundle.loadString("assets/$fileName");
     return (jsonDecode(contents) as List).map((entry) => f(entry)).toList();
@@ -102,8 +103,10 @@ class _MyHomePageState extends State<MyHomePage>
         });
   }
 
-  final Future<List<Fish>> fishFuture =  _read<Fish>('fish.json', (f) => Fish.fromJson(f));
-  final Future<List<Bug>> bugFuture =  _read<Bug>('bugs.json', (f) => Bug.fromJson(f));
+  final Future<List<Fish>> fishFuture =
+      _read<Fish>('fish.json', (f) => Fish.fromJson(f));
+  final Future<List<Bug>> bugFuture =
+      _read<Bug>('bugs.json', (f) => Bug.fromJson(f));
 
   @override
   Widget build(BuildContext context) {
@@ -116,22 +119,19 @@ class _MyHomePageState extends State<MyHomePage>
         ),
         body: Column(children: [
           Container(
-            padding: EdgeInsets.all(10.0),
-
+            padding: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
             child: TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(), 
+                    contentPadding: EdgeInsets.only(left: 20, right: 20),
+                    border: OutlineInputBorder(
+                      borderRadius:
+                          const BorderRadius.all(Radius.circular(50.0)),
+                    ),
                     hintText: 'Enter a search term'),
                 onChanged: (value) {
-                  if (value.length >= 3) {
-                    setState(() {
-                      _searchTerm = value;
-                    });
-                  } else {
-                    setState(() {
-                      _searchTerm = "";
-                    });
-                  }
+                  setState(() {
+                    _searchTerm = value;
+                  });
                 }),
           ),
           Expanded(
@@ -165,16 +165,17 @@ class _MyHomePageState extends State<MyHomePage>
             ),
           ),
         ]),
-        bottomNavigationBar: Material(
+        bottomNavigationBar: BottomAppBar(
+          shape: const CircularNotchedRectangle(),
           color: Colors.blue,
           child: TabBar(
             tabs: <Tab>[
               Tab(
-                text: 'Fish',
+                // text: 'Fish',
                 icon: Icon(Icons.pool),
               ),
               Tab(
-                text: 'Bugs',
+                // text: 'Bugs',
                 icon: Icon(Icons.bug_report),
               ),
               // Tab(
@@ -185,6 +186,9 @@ class _MyHomePageState extends State<MyHomePage>
             controller: tabController,
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+            onPressed: null, child: Icon(Icons.filter_list)),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }

@@ -22,6 +22,7 @@ class FishListViewBuilder extends StatelessWidget {
               title: Text(fish[index].name),
               trailing: Column(
                 children: [
+                  Text(fish[index].mkMonthsNorthern()),
                   Text(fish[index].time),
                   Text("${fish[index].price} 💲")
                 ],
