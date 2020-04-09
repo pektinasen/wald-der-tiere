@@ -120,28 +120,29 @@ String mkMonthsNorthern() {
       northern.december,
     ].map((_) => (_ == MonthValue.Yes));
 
-    int firstYes = 0, lastYes = 0;
-    bool seenNO = false; 
-    bool seenYes = false;
-    for (var e in yesno.withIndex()) {
-      var i = e.key;
-      var v = e.value;
-      if (v == true && seenNO == false && seenYes == true) {
-        lastYes = i;
-      } else if (v == true && seenNO == true && seenYes == false) {
-        firstYes = i;
-        seenYes = true;
-      } else if (v == true && seenNO == true && seenYes == true) {
-        lastYes = i;
-      } else if (v == true && seenNO == false && seenYes == false) {
-        seenYes = true;
-      } else if (v == false && seenNO == false) {
-        seenNO = true;
-      }
+    int firstMonth = 0, lastMonth = 0;
 
+    bool seen = false;
+    List<int> freeInbetween = [-1,-1];
+    for(var e in yesno.withIndex()){
+      var key = e.key;
+      var value = e.value;
+
+      // TODO: Check for multiple intervals
+      if(value && !seen){
+        firstMonth = key;
+        seen = true;
+      } else if (value && seen){
+        lastMonth = key;
+      } else if (!value && seen && freeInbetween[0] == -1){
+        freeInbetween[0] = e.key;
+      } else if (!value && seen && freeInbetween[0] != -1){
+        freeInbetween[1] = e.key;
+      }
     }
-    if (seenNO == false && seenYes == true) {
-      lastYes = 11;
+    if (freeInbetween[0] != -1 && freeInbetween[1] < lastMonth){
+      firstMonth = freeInbetween[1] + 1;
+      lastMonth = freeInbetween[0] - 1;
     }
 
     var map = {
@@ -158,9 +159,9 @@ String mkMonthsNorthern() {
       10 : "Nov",
       11 : "Dez",
     };
-    return firstYes == 0 && lastYes == 11 
+    return firstMonth == 0 && lastMonth == 11 
     ? "All year"
-     : "${map[firstYes]} - ${map[lastYes]}";
+     : "${map[firstMonth]} - ${map[lastMonth]}";
   }
 }
 
