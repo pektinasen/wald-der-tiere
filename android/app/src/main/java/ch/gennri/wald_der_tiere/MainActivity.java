@@ -1,4 +1,4 @@
-package com.example.wald_der_tiere;
+package ch.gennri.wald_der_tiere;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

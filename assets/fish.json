@@ -19,7 +19,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -33,7 +33,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "e-ea-NH-Icon-bitterling.png"
   },
@@ -57,7 +57,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -71,7 +71,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-2c-NH-Icon-palechub.png"
   },
@@ -95,7 +95,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -109,7 +109,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "0-03-NH-Icon-cruciancarp.png"
   },
@@ -133,7 +133,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -147,7 +147,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-22-NH-Icon-dace.png"
   },
@@ -171,7 +171,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -185,7 +185,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-2c-NH-Icon-carp.png"
   },
@@ -209,7 +209,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -223,7 +223,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "7-74-NH-Icon-koi.png"
   },
@@ -247,7 +247,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -261,7 +261,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "e-ed-NH-Icon-goldfish.png"
   },
@@ -285,7 +285,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -299,7 +299,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "c-c9-NH-Icon-popeyedgoldfish.png"
   },
@@ -323,7 +323,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -337,7 +337,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "f-f9-NH-Icon-ranchugoldfish.png"
   },
@@ -361,7 +361,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -375,7 +375,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "c-c3-NH-Icon-killifish.png"
   },
@@ -399,7 +399,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -413,7 +413,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "c-cd-NH-Icon-crawfish.png"
   },
@@ -437,7 +437,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -451,7 +451,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "c-c3-NH-Icon-softshelledturtle.png"
   },
@@ -475,7 +475,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -489,7 +489,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-24-NH-Icon-snappingturtle.png"
   },
@@ -513,7 +513,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -527,7 +527,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "1-1c-NH-Icon-tadpole.png"
   },
@@ -551,7 +551,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -565,7 +565,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "6-6b-NH-Icon-frog.png"
   },
@@ -589,7 +589,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -603,7 +603,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "e-ee-NH-Icon-freshwatergoby.png"
   },
@@ -627,7 +627,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -641,7 +641,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "7-77-NH-Icon-loach.png"
   },
@@ -665,7 +665,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -679,7 +679,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-29-NH-Icon-catfish.png"
   },
@@ -703,7 +703,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -717,7 +717,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "0-0c-NH-Icon-giantsnakehead.png"
   },
@@ -741,7 +741,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -755,7 +755,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "6-69-NH-Icon-bluegill.png"
   },
@@ -779,7 +779,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -793,7 +793,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "1-1d-NH-Icon-yellowperch.png"
   },
@@ -817,7 +817,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -831,7 +831,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "e-e2-NH-Icon-blackbass.png"
   },
@@ -855,7 +855,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -869,7 +869,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "5-53-NH-Icon-tilapia.png"
   },
@@ -893,7 +893,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -907,7 +907,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "d-dc-NH-Icon-pike.png"
   },
@@ -931,7 +931,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -945,7 +945,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "4-41-NH-Icon-pondsmelt.png"
   },
@@ -969,7 +969,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -983,7 +983,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "4-40-NH-Icon-sweetfish.png"
   },
@@ -1007,7 +1007,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -1021,7 +1021,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "5-5f-NH-Icon-cherrysalmon.png"
   },
@@ -1045,7 +1045,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -1059,7 +1059,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "1-15-NH-Icon-char.png"
   },
@@ -1083,7 +1083,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -1097,7 +1097,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "5-5c-NH-Icon-goldentrout.png"
   },
@@ -1121,7 +1121,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -1135,7 +1135,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "7-7b-NH-Icon-stringfish.png"
   },
@@ -1159,7 +1159,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -1173,7 +1173,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "f-fb-NH-Icon-salmon.png"
   },
@@ -1197,7 +1197,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -1211,7 +1211,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "f-fd-NH-Icon-kingsalmon.png"
   },
@@ -1235,7 +1235,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -1249,7 +1249,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "e-e3-NH-Icon-mittencrab.png"
   },
@@ -1273,7 +1273,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1287,7 +1287,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "6-63-NH-Icon-guppy.png"
   },
@@ -1311,7 +1311,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1325,7 +1325,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "8-89-NH-Icon-nibblefish.png"
   },
@@ -1349,7 +1349,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1363,7 +1363,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "6-63-NH-Icon-angelfish.png"
   },
@@ -1387,7 +1387,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1401,7 +1401,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "7-7c-NH-Icon-betta.png"
   },
@@ -1425,7 +1425,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1439,7 +1439,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "d-da-NH-Icon-neontetra.png"
   },
@@ -1463,7 +1463,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1477,7 +1477,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "6-68-NH-Icon-rainbowfish.png"
   },
@@ -1501,7 +1501,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1515,7 +1515,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "b-b9-NH-Icon-piranha.png"
   },
@@ -1539,7 +1539,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1553,7 +1553,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "b-bf-NH-Icon-arowana.png"
   },
@@ -1577,7 +1577,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1591,7 +1591,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "d-df-NH-Icon-dorado.png"
   },
@@ -1615,7 +1615,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1629,7 +1629,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "9-9f-NH-Icon-gar.png"
   },
@@ -1653,7 +1653,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1667,7 +1667,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "7-7f-NH-Icon-arapaima.png"
   },
@@ -1691,7 +1691,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1705,7 +1705,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "a-a0-NH-Icon-saddledbichir.png"
   },
@@ -1729,7 +1729,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -1743,7 +1743,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "9-98-NH-Icon-sturgeon.png"
   },
@@ -1767,7 +1767,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -1781,7 +1781,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "8-8f-NH-Icon-seabutterfly.png"
   },
@@ -1805,7 +1805,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1819,7 +1819,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "5-55-NH-Icon-seahorse.png"
   },
@@ -1843,7 +1843,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1857,7 +1857,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-2f-NH-Icon-clownfish.png"
   },
@@ -1881,7 +1881,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1895,7 +1895,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "1-11-NH-Icon-surgeonfish.png"
   },
@@ -1919,7 +1919,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1933,7 +1933,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "8-8e-NH-Icon-butterflyfish.png"
   },
@@ -1957,7 +1957,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -1971,7 +1971,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "6-6f-NH-Icon-napoleonfish.png"
   },
@@ -1995,7 +1995,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2009,7 +2009,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "1-1c-NH-Icon-zebraturkeyfish.png"
   },
@@ -2033,7 +2033,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -2047,7 +2047,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "3-39-NH-Icon-blowfish.png"
   },
@@ -2071,7 +2071,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2085,7 +2085,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "1-1f-NH-Icon-pufferfish.png"
   },
@@ -2109,7 +2109,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2123,7 +2123,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-24-NH-Icon-anchovy.png"
   },
@@ -2147,7 +2147,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2161,7 +2161,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "d-d5-NH-Icon-horsemackerel.png"
   },
@@ -2185,7 +2185,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2199,7 +2199,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "8-8c-NH-Icon-barredknifejaw.png"
   },
@@ -2223,7 +2223,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2237,7 +2237,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-22-NH-Icon-seabass.png"
   },
@@ -2261,7 +2261,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2275,7 +2275,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "d-dd-NH-Icon-redsnapper.png"
   },
@@ -2299,7 +2299,7 @@
       "sep": "-",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -2313,7 +2313,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "c-c6-NH-Icon-dab.png"
   },
@@ -2337,7 +2337,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2351,7 +2351,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "9-9e-NH-Icon-oliveflounder.png"
   },
@@ -2375,7 +2375,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2389,7 +2389,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "3-3b-NH-Icon-squid.png"
   },
@@ -2413,7 +2413,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -2427,7 +2427,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "e-e5-NH-Icon-morayeel.png"
   },
@@ -2451,7 +2451,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2465,7 +2465,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "a-ac-NH-Icon-ribboneel.png"
   },
@@ -2489,7 +2489,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -2503,7 +2503,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "5-50-NH-Icon-tuna.png"
   },
@@ -2527,7 +2527,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2541,7 +2541,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "2-2f-NH-Icon-bluemarlin.png"
   },
@@ -2565,7 +2565,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2579,7 +2579,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "7-7b-NH-Icon-gianttrevally.png"
   },
@@ -2603,7 +2603,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2617,7 +2617,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "8-82-NH-Icon-mahimahi.png"
   },
@@ -2641,7 +2641,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2655,7 +2655,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "5-52-NH-Icon-oceansunfish.png"
   },
@@ -2679,7 +2679,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "-",
@@ -2693,7 +2693,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "d-db-NH-Icon-ray.png"
   },
@@ -2717,7 +2717,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2731,7 +2731,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "7-73-NH-Icon-sawshark.png"
   },
@@ -2755,7 +2755,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2769,7 +2769,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "2-25-NH-Icon-hammerheadshark.png"
   },
@@ -2793,7 +2793,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2807,7 +2807,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "3-38-NH-Icon-greatwhiteshark.png"
   },
@@ -2831,7 +2831,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2845,7 +2845,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "1-1c-NH-Icon-whaleshark.png"
   },
@@ -2869,7 +2869,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "southern": {
       "jan": "\u2713",
@@ -2883,7 +2883,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "b-b9-NH-Icon-suckerfish.png"
   },
@@ -2907,7 +2907,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -2921,7 +2921,7 @@
       "sep": "\u2713",
       "okt": "-",
       "nov": "-",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "a-a5-NH-Icon-footballfish.png"
   },
@@ -2945,7 +2945,7 @@
       "sep": "-",
       "okt": "-",
       "nov": "-",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "-",
@@ -2959,7 +2959,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "-"
+      "dec": "-"
     },
     "image_name": "3-33-NH-Icon-oarfish.png"
   },
@@ -2983,7 +2983,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -2997,7 +2997,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "c-c7-NH-Icon-barreleye.png"
   },
@@ -3021,7 +3021,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "southern": {
       "jan": "\u2713",
@@ -3035,7 +3035,7 @@
       "sep": "\u2713",
       "okt": "\u2713",
       "nov": "\u2713",
-      "dez": "\u2713"
+      "dec": "\u2713"
     },
     "image_name": "3-31-NH-Icon-coelacanth.png"
   }

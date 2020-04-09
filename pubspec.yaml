@@ -1,5 +1,5 @@
 name: wald_der_tiere
-description: A new Flutter project.
+description: Animal Crossing companion App.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -14,16 +14,18 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   built_collection:
-  dataclass: 0.3.0
   cupertino_icons: ^0.1.2
+  dataclass: ^0.3.0
+  fab_circular_menu: ^1.0.0
   path_provider: 
   provider:
+  tuple:
 
 dev_dependencies:
   flutter_test:
