@@ -88,4 +88,9 @@ class Datastore {
     
   }
 
+  Future<void> deleteItems() async {
+    print("delete all");
+    return _db.delete(_tableItems );
+  }
+
 }
