@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../domain.dart';
 import '../services/datastore.dart';
-import '../widgets/fish_list_view.dart';
 import '../widgets/bug_list_view.dart';
+import '../widgets/fish_list_view.dart';
 import '../widgets/search_text_field.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -22,6 +22,41 @@ class _MyHomePageState extends State<MyHomePage>
 
   List<Fish> _fish;
   List<Bug> _bugs;
+
+  void onIconButtonPressed(Datastore db) {
+    db.deleteItems();
+    setState(() {
+      _fish = widget.fish;
+      _bugs = widget.bugs;
+    });
+  }
+
+  void onSearchTextChanged(value) {
+    var newFish = widget.fish
+        .where((f) => f.name.toLowerCase().contains(value.toLowerCase()))
+        .toList();
+    var newBugs = widget.bugs
+        .where((b) => b.name.toLowerCase().contains(value.toLowerCase()))
+        .toList();
+    setState(() {
+      _fish = newFish;
+      _bugs = newBugs;
+    });
+  }
+
+  void onFishDismissed(Datastore db, Fish fish) async {
+    await db.checkItem(fish.uuid);
+    setState(() {
+      _fish = _fish.where((item) => item.uuid != fish.uuid).toList();
+    });
+  }
+
+  void onBugDismissed(Datastore db, Bug bug) async {
+    await db.checkItem(bug.uuid);
+    setState(() {
+      _bugs = _bugs.where((item) => item.uuid != bug.uuid).toList();
+    });
+  }
 
   @override
   void initState() {
@@ -48,56 +83,24 @@ class _MyHomePageState extends State<MyHomePage>
           actions: [
             IconButton(
               icon: Icon(Icons.delete),
-              onPressed: () {
-                db.deleteItems();
-                setState(() {
-                  _fish = widget.fish;
-                  _bugs = widget.bugs;
-                });
-              },
+              onPressed: () => onIconButtonPressed(db),
             ),
           ],
         ),
         body: Column(children: [
           Container(
-            padding: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
-            child: SearchTextField(onChanged: (value) {
-              var newFish = widget.fish
-                  .where(
-                      (f) => f.name.toLowerCase().contains(value.toLowerCase()))
-                  .toList();
-              var newBugs = widget.bugs
-                  .where(
-                      (b) => b.name.toLowerCase().contains(value.toLowerCase()))
-                  .toList();
-              setState(() {
-                _fish = newFish;
-                _bugs = newBugs;
-              });
-            }),
-          ),
+              padding: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
+              child: SearchTextField(onChanged: (v) => onSearchTextChanged(v))),
           Expanded(
             child: TabBarView(
               children: [
                 FishListViewBuilder(
                   _fish,
-                  onDismissed: (f) async {
-                    await db.checkItem(f.uuid);
-                    setState(() {
-                      _fish =
-                          _fish.where((item) => item.uuid != f.uuid).toList();
-                    });
-                  },
+                  onDismissed: (fish) => onFishDismissed(db, fish),
                 ),
                 BugsListViewBuilder(
                   _bugs,
-                  onDismissed: (b) async {
-                    await db.checkItem(b.uuid);
-                    setState(() {
-                      _bugs =
-                          _bugs.where((item) => item.uuid != b.uuid).toList();
-                    });
-                  },
+                  onDismissed: (bug) => onBugDismissed(db, bug),
                 ),
               ],
               controller: tabController,
