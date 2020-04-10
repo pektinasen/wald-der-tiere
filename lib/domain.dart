@@ -197,22 +197,26 @@ class Bug extends _$Bug {
 
     int firstYes = 0, lastYes = 0;
     bool seenNO = false; 
+    bool seenYes = false;
     for (var e in yesno.withIndex()) {
       var i = e.key;
       var v = e.value;
-      if (v == true && seenNO == false) {
-        
-      } else if (v == true && seenNO == true) {
+      if (v == true && seenNO == false && seenYes == true) {
+        lastYes = i;
+      } else if (v == true && seenNO == true && seenYes == false) {
         firstYes = i;
+        seenYes = true;
+      } else if (v == true && seenNO == true && seenYes == true) {
+        lastYes = i;
+      } else if (v == true && seenNO == false && seenYes == false) {
+        seenYes = true;
       } else if (v == false && seenNO == false) {
         seenNO = true;
-        lastYes = (i - 1) % 12;
-      } else if (v == false && seenNO == true) {
-        
-      } 
-      if ( i == 11 && seenNO == false) {
-        lastYes = 11;
       }
+
+    }
+    if (seenNO == false && seenYes == true) {
+      lastYes = 11;
     }
 
     var map = {
@@ -229,8 +233,11 @@ class Bug extends _$Bug {
       10 : "Nov",
       11 : "Dez",
     };
-    return "${map[firstYes]} - ${map[lastYes]}";
+    return firstYes == 0 && lastYes == 11 
+    ? "All year"
+     : "${map[firstYes]} - ${map[lastYes]}";
   }
+
 
   Bug.fromJson(Map<String, dynamic> json)
       : uuid = json['uuid'],

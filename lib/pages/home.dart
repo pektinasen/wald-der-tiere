@@ -96,7 +96,13 @@ class _MyHomePageState extends State<MyHomePage>
                     });
                   },
                 ),
-                BugsListViewBuilder(_bugs),
+                BugsListViewBuilder(_bugs,
+                onDismissed: (f) async {
+                    await db.checkItem(f.uuid);
+                    setState(() {
+                      _fish = _fish.where((item) => item.uuid != f.uuid).toList() ;
+                    });
+                  },),
               ],
               controller: tabController,
             ),
