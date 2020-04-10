@@ -3,14 +3,15 @@ import 'package:provider/provider.dart';
 
 import '../domain.dart';
 import '../services/datastore.dart';
-import '../widgets/BugsListItemBuilder.dart';
-import '../widgets/FishListItem.dart';
+import '../widgets/fish_list_view.dart';
+import '../widgets/bug_list_view.dart';
+import '../widgets/search_text_field.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;
   final List<Bug> bugs;
   final List<Fish> fish;
-  MyHomePage( this.bugs, this.fish, {Key key, this.title}) : super(key: key);
+  MyHomePage(this.bugs, this.fish, {Key key, this.title}) : super(key: key);
 
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -44,8 +45,7 @@ class _MyHomePageState extends State<MyHomePage>
       child: Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
-          actions: <Widget>[
-            // action button
+          actions: [
             IconButton(
               icon: Icon(Icons.delete),
               onPressed: () {
@@ -61,28 +61,20 @@ class _MyHomePageState extends State<MyHomePage>
         body: Column(children: [
           Container(
             padding: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
-            child: TextField(
-                decoration: InputDecoration(
-                    contentPadding: EdgeInsets.only(left: 20, right: 20),
-                    border: OutlineInputBorder(
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(50.0)),
-                    ),
-                    hintText: 'Enter a search term'),
-                onChanged: (value) {
-                  var newFish = widget.fish
-                      .where((f) =>
-                          f.name.toLowerCase().contains(value.toLowerCase()))
-                      .toList();
-                  var newBugs = widget.bugs
-                      .where((b) =>
-                          b.name.toLowerCase().contains(value.toLowerCase()))
-                      .toList();
-                  setState(() {
-                    _fish = newFish;
-                    _bugs = newBugs;
-                  });
-                }),
+            child: SearchTextField(onChanged: (value) {
+              var newFish = widget.fish
+                  .where(
+                      (f) => f.name.toLowerCase().contains(value.toLowerCase()))
+                  .toList();
+              var newBugs = widget.bugs
+                  .where(
+                      (b) => b.name.toLowerCase().contains(value.toLowerCase()))
+                  .toList();
+              setState(() {
+                _fish = newFish;
+                _bugs = newBugs;
+              });
+            }),
           ),
           Expanded(
             child: TabBarView(
@@ -92,17 +84,21 @@ class _MyHomePageState extends State<MyHomePage>
                   onDismissed: (f) async {
                     await db.checkItem(f.uuid);
                     setState(() {
-                      _fish = _fish.where((item) => item.uuid != f.uuid).toList() ;
+                      _fish =
+                          _fish.where((item) => item.uuid != f.uuid).toList();
                     });
                   },
                 ),
-                BugsListViewBuilder(_bugs,
-                onDismissed: (f) async {
-                    await db.checkItem(f.uuid);
+                BugsListViewBuilder(
+                  _bugs,
+                  onDismissed: (b) async {
+                    await db.checkItem(b.uuid);
                     setState(() {
-                      _fish = _fish.where((item) => item.uuid != f.uuid).toList() ;
+                      _bugs =
+                          _bugs.where((item) => item.uuid != b.uuid).toList();
                     });
-                  },),
+                  },
+                ),
               ],
               controller: tabController,
             ),
@@ -121,10 +117,6 @@ class _MyHomePageState extends State<MyHomePage>
                 // text: 'Bugs',
                 icon: Icon(Icons.bug_report),
               ),
-              // Tab(
-              //   text: 'Furniture',
-              //   icon: Icon(Icons.beach_access),
-              // ),
             ],
             controller: tabController,
           ),

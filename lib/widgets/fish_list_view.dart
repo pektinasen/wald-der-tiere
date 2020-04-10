@@ -22,16 +22,7 @@ class FishListViewBuilder extends StatelessWidget {
             background: Container(color: Colors.green),
             child: Column(
               children: <Widget>[
-                ListTile(
-                  subtitle: Text(fish[index].location),
-                  leading: Image.asset('assets/images/${fish[index].image}'),
-                  title: Text(fish[index].name),
-                  trailing: Column(children: [
-                    Text(fish[index].mkMonthsNorthern()),
-                    Text(fish[index].time),
-                    Text("${fish[index].price} 💲")
-                  ], crossAxisAlignment: CrossAxisAlignment.end),
-                ),
+                FishListTile(fish: fish[index]),
                 Divider(
                   height: 2.0,
                 ),
@@ -39,5 +30,25 @@ class FishListViewBuilder extends StatelessWidget {
             ),
           );
         });
+  }
+}
+
+class FishListTile extends StatelessWidget {
+  final Fish fish;
+
+  const FishListTile({Key key, @required this.fish}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      subtitle: Text(fish.location),
+      leading: Image.asset('assets/images/${fish.image}'),
+      title: Text(fish.name),
+      trailing: Column(children: [
+        Text(fish.mkMonthsNorthern()),
+        Text(fish.time),
+        Text("${fish.price} 💲")
+      ], crossAxisAlignment: CrossAxisAlignment.end),
+    );
   }
 }

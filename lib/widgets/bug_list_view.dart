@@ -22,22 +22,36 @@ class BugsListViewBuilder extends StatelessWidget {
         background: Container(color: Colors.green),
         child: Column(
           children: <Widget>[
-            ListTile(
-              subtitle: Text(bugs[index].location),
-              leading: Image.asset('assets/images/${bugs[index].image}'),
-              title: Text(bugs[index].name),
-              trailing: Column(children: [
-                Text(bugs[index].mkMonthsNorthern()),
-                Text(bugs[index].time),
-                Text("${bugs[index].price} 💲")
-              ], crossAxisAlignment: CrossAxisAlignment.end),
-            ),
+            BugListTile(bug: bugs[index]),
             Divider(
               height: 2.0,
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class BugListTile extends StatelessWidget {
+  const BugListTile({
+    Key key,
+    @required this.bug,
+  }) : super(key: key);
+
+  final Bug bug;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      subtitle: Text(bug.location),
+      leading: Image.asset('assets/images/${bug.image}'),
+      title: Text(bug.name),
+      trailing: Column(children: [
+        Text(bug.mkMonthsNorthern()),
+        Text(bug.time),
+        Text("${bug.price} 💲")
+      ], crossAxisAlignment: CrossAxisAlignment.end),
     );
   }
 }
