@@ -32,7 +32,7 @@ mixin MonthsPrinter {
       return intervals;
   }
 
-  String nameToChange(intervals){
+  String nameToChange(List<Tuple2<int, int>> intervals){
       const MONTHS = {
         0 : "Jan",
         1 : "Feb",
@@ -52,21 +52,22 @@ mixin MonthsPrinter {
         return "doesn't exist";
       }
 
-      String output = "";
-      bool isWrapped = intervals.first.item1 == 0 && intervals.last.item2 == 11;
-      if(isWrapped && intervals.length > 2){
-        output = "${MONTHS[intervals[1].item1]} - ${MONTHS[intervals[1].item2]}";
-        output += " | ${MONTHS[intervals.last.item1]} - ${MONTHS[intervals.first.item2]}";
-      } else if(intervals.first.item1 == 0 && intervals.first.item2 == 11){
-        output = "All year";
-      } else if(intervals.first.item1 == intervals.first.item2){
-        output = MONTHS[intervals.first.item1];
-      } else if(isWrapped){
-        output = "${MONTHS[intervals.last.item1]} - ${MONTHS[intervals.first.item2]}";
-      } else{
-        output = intervals.map((interval) => "${MONTHS[interval.item1]} - ${MONTHS[interval.item2]}").join(" | ");
+      String tuple2string(Tuple2<int, int> t) {
+        if (t.item1 == t.item2) {
+          return MONTHS[t.item1];
+        }
+        if (t.item1 == 0 && t.item2 == 11) {
+          return "All year";
+        }
+        return "${MONTHS[t.item1]} - ${MONTHS[t.item2]}";
+      } 
+
+      // we have a wrapped interval
+      if (intervals.length > 1 && intervals.first.item1 == 0 && intervals.last.item2 == 11) {
+        intervals = [intervals[1], Tuple2(intervals.last.item1, intervals.first.item2)];
       }
-      return output;
+
+      return intervals.map(tuple2string).join(" | ");
   }
 
 String mkMonthsNorthern() {
