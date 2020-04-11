@@ -1,3 +1,5 @@
+import 'package:tuple/tuple.dart';
+
 import '../domain.dart';
 import '../util/list.dart';
 
@@ -25,26 +27,24 @@ String mkMonthsNorthern() {
     int firstMonth = 0, lastMonth = 0;
 
     bool seen = false;
-    List<int> freeInbetween = [-1,-1];
+    Tuple2<int, int> current = Tuple2(-1,-1);
+    List<Tuple2<int,int>> intervals = [];
     for(var e in yesno.withIndex()){
-      var key = e.key;
+      var index = e.key;
       var value = e.value;
 
-      // TODO: Check for multiple intervals
-      if(value && !seen){
-        firstMonth = key;
+      if (!seen && value) {
+        current = Tuple2(index, index);
         seen = true;
-      } else if (value && seen){
-        lastMonth = key;
-      } else if (!value && seen && freeInbetween[0] == -1){
-        freeInbetween[0] = e.key;
-      } else if (!value && seen && freeInbetween[0] != -1){
-        freeInbetween[1] = e.key;
+      } else if (index == 11 && value){
+        current = Tuple2(current.item1, index);
+        intervals.add(current);
+      } else if (seen && value) {
+        current = Tuple2(current.item1, index);
+      } else if (seen && !value) {
+        intervals.add(current);
+        seen = false;
       }
-    }
-    if (freeInbetween[0] != -1 && freeInbetween[1] < lastMonth){
-      firstMonth = freeInbetween[1] + 1;
-      lastMonth = freeInbetween[0] - 1;
     }
 
     var map = {
@@ -61,9 +61,26 @@ String mkMonthsNorthern() {
       10 : "Nov",
       11 : "Dez",
     };
-    return firstMonth == 0 && lastMonth == 11 
-    ? "All year"
-     : "${map[firstMonth]} - ${map[lastMonth]}";
+
+    if(intervals.isEmpty){
+      return "doesn't exist";
+    }
+
+    String output = "";
+    bool isWrapped = intervals.first.item1 == 0 && intervals.last.item2 == 11;
+    if(isWrapped && intervals.length > 2){
+      output = "${map[intervals[1].item1]} - ${map[intervals[1].item2]}";
+      output += " | ${map[intervals.last.item1]} - ${map[intervals.first.item2]}";
+    } else if(intervals.first.item1 == 0 && intervals.first.item2 == 11){
+      output = "All year";
+    } else if(intervals.first.item1 == intervals.first.item2){
+      output = map[intervals.first.item1];
+    } else if(isWrapped){
+      output = "${map[intervals.last.item1]} - ${map[intervals.first.item2]}";
+    } else{
+      output = intervals.map((e) => "${map[e.item1]} - ${map[e.item2]}").join(" | ");
+    }
+    return output;
   }
 
   String mkSouther() {
