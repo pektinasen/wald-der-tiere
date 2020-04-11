@@ -1,5 +1,5 @@
 import 'package:dataclass/dataclass.dart';
-import 'util/list.dart';
+import 'package:wald_der_tiere/util/months_printer.dart';
 
 part 'domain.g.dart';
 
@@ -47,7 +47,7 @@ class Months {
 }
 
 @dataClass
-class Fish extends _$Fish {
+class Fish extends _$Fish with MonthsPrinter {
   final String uuid;
   final String name;
   final int price;
@@ -103,70 +103,11 @@ class Fish extends _$Fish {
           oktober : MonthsValue.of(json['southern']['okt']),
           november : MonthsValue.of(json['southern']['nov']),
           december : MonthsValue.of(json['southern']['dec']));
-
-String mkMonthsNorthern() {
-    var yesno = [
-      northern.january,
-      northern.february,
-      northern.march,
-      northern.april,
-      northern.may,
-      northern.june,
-      northern.july,
-      northern.august,
-      northern.september,
-      northern.oktober,
-      northern.november,
-      northern.december,
-    ].map((_) => (_ == MonthValue.Yes));
-
-    int firstMonth = 0, lastMonth = 0;
-
-    bool seen = false;
-    List<int> freeInbetween = [-1,-1];
-    for(var e in yesno.withIndex()){
-      var key = e.key;
-      var value = e.value;
-
-      // TODO: Check for multiple intervals
-      if(value && !seen){
-        firstMonth = key;
-        seen = true;
-      } else if (value && seen){
-        lastMonth = key;
-      } else if (!value && seen && freeInbetween[0] == -1){
-        freeInbetween[0] = e.key;
-      } else if (!value && seen && freeInbetween[0] != -1){
-        freeInbetween[1] = e.key;
-      }
-    }
-    if (freeInbetween[0] != -1 && freeInbetween[1] < lastMonth){
-      firstMonth = freeInbetween[1] + 1;
-      lastMonth = freeInbetween[0] - 1;
-    }
-
-    var map = {
-      0 : "Jan",
-      1 : "Feb",
-      2 : "Mar",
-      3 : "Apr",
-      4 : "May",
-      5 : "Jun",
-      6 : "Jul",
-      7 : "Aug",
-      8 : "Sep",
-      9 : "Okt",
-      10 : "Nov",
-      11 : "Dez",
-    };
-    return firstMonth == 0 && lastMonth == 11 
-    ? "All year"
-     : "${map[firstMonth]} - ${map[lastMonth]}";
-  }
+          
 }
 
 @dataClass
-class Bug extends _$Bug {
+class Bug extends _$Bug with MonthsPrinter {
   final String uuid;
   final String name;
   final int price;
@@ -179,66 +120,6 @@ class Bug extends _$Bug {
   // final List<String> months_south;
 
   Bug({this.uuid, this.name, this.price, this.location, this.time, this.image, this.northern, this.southern});
-
-  String mkMonthsNorthern() {
-    var yesno = [
-      northern.january,
-      northern.february,
-      northern.march,
-      northern.april,
-      northern.may,
-      northern.june,
-      northern.july,
-      northern.august,
-      northern.september,
-      northern.oktober,
-      northern.november,
-      northern.december,
-    ].map((_) => (_ == MonthValue.Yes));
-
-    int firstYes = 0, lastYes = 0;
-    bool seenNO = false; 
-    bool seenYes = false;
-    for (var e in yesno.withIndex()) {
-      var i = e.key;
-      var v = e.value;
-      if (v == true && seenNO == false && seenYes == true) {
-        lastYes = i;
-      } else if (v == true && seenNO == true && seenYes == false) {
-        firstYes = i;
-        seenYes = true;
-      } else if (v == true && seenNO == true && seenYes == true) {
-        lastYes = i;
-      } else if (v == true && seenNO == false && seenYes == false) {
-        seenYes = true;
-      } else if (v == false && seenNO == false) {
-        seenNO = true;
-      }
-
-    }
-    if (seenNO == false && seenYes == true) {
-      lastYes = 11;
-    }
-
-    var map = {
-      0 : "Jan",
-      1 : "Feb",
-      2 : "Mar",
-      3 : "Apr",
-      4 : "May",
-      5 : "Jun",
-      6 : "Jul",
-      7 : "Aug",
-      8 : "Sep",
-      9 : "Okt",
-      10 : "Nov",
-      11 : "Dez",
-    };
-    return firstYes == 0 && lastYes == 11 
-    ? "All year"
-     : "${map[firstYes]} - ${map[lastYes]}";
-  }
-
 
   Bug.fromJson(Map<String, dynamic> json)
       : uuid = json['uuid'],
