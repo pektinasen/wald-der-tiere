@@ -24,8 +24,6 @@ String mkMonthsNorthern() {
       northern.december,
     ].map((_) => (_ == MonthValue.Yes));
 
-    int firstMonth = 0, lastMonth = 0;
-
     bool seen = false;
     Tuple2<int, int> current = Tuple2(-1,-1);
     List<Tuple2<int,int>> intervals = [];
@@ -47,7 +45,7 @@ String mkMonthsNorthern() {
       }
     }
 
-    var map = {
+    const MONTHS = {
       0 : "Jan",
       1 : "Feb",
       2 : "Mar",
@@ -69,16 +67,16 @@ String mkMonthsNorthern() {
     String output = "";
     bool isWrapped = intervals.first.item1 == 0 && intervals.last.item2 == 11;
     if(isWrapped && intervals.length > 2){
-      output = "${map[intervals[1].item1]} - ${map[intervals[1].item2]}";
-      output += " | ${map[intervals.last.item1]} - ${map[intervals.first.item2]}";
+      output = "${MONTHS[intervals[1].item1]} - ${MONTHS[intervals[1].item2]}";
+      output += " | ${MONTHS[intervals.last.item1]} - ${MONTHS[intervals.first.item2]}";
     } else if(intervals.first.item1 == 0 && intervals.first.item2 == 11){
       output = "All year";
     } else if(intervals.first.item1 == intervals.first.item2){
-      output = map[intervals.first.item1];
+      output = MONTHS[intervals.first.item1];
     } else if(isWrapped){
-      output = "${map[intervals.last.item1]} - ${map[intervals.first.item2]}";
+      output = "${MONTHS[intervals.last.item1]} - ${MONTHS[intervals.first.item2]}";
     } else{
-      output = intervals.map((e) => "${map[e.item1]} - ${map[e.item2]}").join(" | ");
+      output = intervals.map((interval) => "${MONTHS[interval.item1]} - ${MONTHS[interval.item2]}").join(" | ");
     }
     return output;
   }
