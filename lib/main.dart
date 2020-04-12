@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -10,6 +11,7 @@ import 'domain.dart';
 import 'pages/home.dart';
 
 void main() => runApp(MyApp());
+
 
 class MyApp extends StatelessWidget {
   static Future<List<T>> _read<T>(
@@ -40,12 +42,13 @@ class MyApp extends StatelessWidget {
     }();
     final bugF = bugFuture();
     final fishF = fishFuture();
+    
     final allF = Future.wait([dbF, bugF, fishF]).then((response) =>
         Tuple3<Datastore, List<Bug>, List<Fish>>(
             response[0], response[1], response[2]));
 
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Wald der Tiere',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -63,7 +66,7 @@ class MyApp extends StatelessWidget {
                       Provider.value(value: deps.item2),
                       Provider.value(value: deps.item3)
                     ],
-                    child: MyHomePage(deps.item2, deps.item3,
+                    child: MyHomePage(deps.item1, deps.item2, deps.item3,
                       title: "Wald der Tiere"),
                   );
                 default:

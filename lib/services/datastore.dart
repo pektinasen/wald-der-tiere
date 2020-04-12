@@ -45,7 +45,7 @@ class Datastore {
           """SELECT count(*) FROM $_tableItems WHERE item_uuid = ?""",
           [itemUuid]));
 
-  Future<void> _check(String itemUuid, bool check) async => _db.rawUpdate("""
+  Future<void> _check(String itemUuid, int check) async => _db.rawUpdate("""
         UPDATE items 
         SET checked = ?
         WHERE item_uuid = ?
@@ -54,12 +54,12 @@ class Datastore {
   Future<void> checkItem(String itemUuid) async {
     var count = await _count(itemUuid);
     if (count > 0) {
-      _check(itemUuid, true);
+      _check(itemUuid, 1);
     } else {
       _db.rawInsert("""
         INSERT INTO items(item_uuid, checked) 
         VALUES (?,?)
-      """, [itemUuid, true]);
+      """, [itemUuid, 1]);
     }
   }
 
@@ -67,13 +67,13 @@ class Datastore {
     _db.rawInsert("""
         INSERT INTO items(item_uuid, checked) 
         VALUES (?,?)
-      """, [itemUuid, false]);
+      """, [itemUuid, 0]);
 
-  Future<List<Tuple2<String, bool>>> allChecked() async {
-    var list = await _db.query(_tableItems,
-        columns: ['item_uuid', 'checked'],
-        where: 'checked');
-    return list.map((item) => Tuple2<String,bool>(item['item_uuid'], intToBool(item['checked']))).toList();
+  Future<Set<String>> allChecked() async {
+    List<Map<String, dynamic>> list = await _db.query(_tableItems,
+        columns: ['item_uuid'],
+        where: 'checked > 0');
+    return list.map<String>((item) =>(item['item_uuid'])).toSet();
   }
 
   final intToBool = (i) => i != 0; 
